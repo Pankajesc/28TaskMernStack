@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="./assets/styles/styles.css" /> -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+      :root {
+        --back: #1d1e2c;
+        --front: #f4c700;
+        --white: #ededf4;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .header {
+        padding: 0 3rem;
+        background-color: var(--front);
+        color: var(--back);
+      }
+
+      .header-title h1 {
+        margin-top: 0.5rem;
+        font-size: 2rem;
+        font-weight: 900;
+      }
+
+      .body {
+        height: 70vh;
+      }
+
+      .footer {
+        background-color: var(--back);
+        color: var(--front);
+      }
+
+      .header-row-upper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .header-icons-items {
+        font-weight: 300;
+        font-size: 0.9rem;
+      }
+
+      .header-icons-items i {
+        font-size: 0.9rem;
+      }
+
+      .header-row-lower {
+        padding: 0.8rem 0;
+        color: var(--white);
+        background: var(--back);
+      }
+
+      .item-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-size: 13px;
+      }
+
+      .item-bar div {
+        cursor: pointer;
+        border: 0px solid var(--back);
+        transition: 300ms ease all;
+      }
+
+      .item-bar div:hover {
+        border-bottom: 1px solid var(--white);
+      }
+
+      .header-row-lower button {
+        background: none;
+        border: 1px solid var(--white);
+        color: var(--white);
+        padding: 0.3rem 0.7rem;
+        font-size: 12px;
+        text-transform: uppercase;
+        transition: all ease 200ms;
+      }
+
+      .body {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("https://images.pexels.com/photos/10202865/pexels-photo-10202865.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+            top center/cover;
+      }
+
+      .body-items {
+        height: 100%;
+        color: var(--white);
+        text-transform: capitalize;
+      }
+
+      .body-items > button {
+        background: none;
+        border: 1px solid var(--white);
+        color: var(--white);
+        padding: 0.7rem 2rem;
+        text-transform: uppercase;
+        font-size: 13px;
+        transition: all ease 200ms;
+      }
+
+      button:hover {
+        background: var(--white);
+        color: var(--back);
+      }
+
+      .icon {
+        font-size: 2rem;
+      }
+
+      .footer-text {
+        font-size: 12px;
+      }
+
+      .middle {
+        background: var(--front);
+        color: var(--back);
+      }
+    </style>
+    <title>Builderz</title>
+  </head>
+  <body>
+    <div class="container-fluid header">
+      <div class="header-row-upper row mx-2 g-0">
+        <div class="header-title col-3 d-flex align-items-center">
+          <h1>Builderz</h1>
+        </div>
+        <div class="header-icons col-6">
+          <div
+            class="header-icons-items row d-flex justify-content-center align-items-center"
+          >
+            <div class="col">
+              <i class="fa-solid fa-calendar-days"></i>
+              Opening Hour
+            </div>
+            <div class="col">
+              <i class="fa-solid fa-phone"></i>
+              Call Us
+            </div>
+            <div class="col"><i class="fa-solid fa-envelope"></i> Email Us</div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="header-row-lower row justify-content-between align-items-center mx-2 px-4"
+      >
+        <div class="col-5 item-bar">
+          <div>Home</div>
+          <div>About</div>
+          <div>Service</div>
+          <div>Project</div>
+          <div>Pages</div>
+          <div>Contact us</div>
+        </div>
+        <div class="col-2 d-flex justify-content-end g-0">
+          <button>Get A Quote</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid body">
+      <div
+        class="container body-items text-center d-flex align-items-center justify-content-center flex-column w-0"
+      >
+        <h3>we are professional</h3>
+        <h1 style="font-weight: 900; font-size: 3rem">
+          for your dream project
+        </h1>
+        <button class="m-3">get a quote</button>
+      </div>
+    </div>
+
+    <div class="container-fluid footer">
+      <div class="row g-0">
+        <div class="col-sm-12 col-md-6 col-lg-4 pt-4">
+          <div class="container">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-4 icon justify-content-center d-flex">
+                <i class="fa-solid fa-helmet-safety"></i>
+              </div>
+              <div class="col-8">
+                <h5 style="font-weight: 700">Expert Worker</h5>
+                <p class="footer-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore consequatur mollitia ducimus!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 middle pt-4">
+          <div class="container">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-4 icon justify-content-center d-flex">
+                <i class="fa-solid fa-city"></i>
+              </div>
+              <div class="col-8">
+                <h5 style="font-weight: 700">Quality Work</h5>
+                <p class="footer-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla, saepe reprehenderit. Obcaecati?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 pt-4">
+          <div class="container">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-4 icon justify-content-center d-flex">
+                <i class="fa-solid fa-headset"></i>
+              </div>
+              <div class="col-8">
+                <h5 style="font-weight: 700">24/7 Support</h5>
+                <p class="footer-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officia impedit ab quia!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
